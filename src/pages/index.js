@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import Image from "../components/image";
+import SEO from "../components/seo";
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
-)
+);
 
 export const pageQuery = graphql`
   query {
@@ -26,6 +26,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default IndexPage
+export default IndexPage;
